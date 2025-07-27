@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+StreetSupply+ – Solving for Street Food Vendors
 
-## Project info
+Team Name: Git Monkeys
 
-**URL**: https://lovable.dev/projects/a6021d77-a099-47c8-8e0f-fbedf1935155
+Team Members:
 
-## How can I edit this code?
+Ashok R
 
-There are several ways of editing your application.
+Darshhan SP
 
-**Use Lovable**
+Poornashree A
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a6021d77-a099-47c8-8e0f-fbedf1935155) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🚀 Project Overview
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Street food vendors in India face challenges in sourcing affordable, high-quality raw materials from trusted suppliers. StreetSupply+ is a web-based platform designed to solve this problem by connecting vendors and suppliers on a single digital platform.
 
-Follow these steps:
+Our solution enables vendors to:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Discover verified suppliers nearby.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Compare prices and product quality in real-time.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Place group orders to unlock bulk discounts.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Track deliveries with full transparency.
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Suppliers can:
 
-**Use GitHub Codespaces**
+Manage inventory and product listings.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Receive and process vendor orders seamlessly.
 
-## What technologies are used for this project?
+Build trust and maintain long-term relationships with local vendors.
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/a6021d77-a099-47c8-8e0f-fbedf1935155) and click on Share -> Publish.
+🌟 Features
 
-## Can I connect a custom domain to my Lovable project?
+Vendor Dashboard – Browse products, compare prices, and track orders.
 
-Yes, you can!
+Supplier Dashboard – Manage listings, orders, and stock updates.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Group Order System – Vendors can combine purchases to save money.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+AI-Powered Price Insights – Forecast price trends and nearby supplier mapping.
+
+Clean UI/UX – A minimal, mobile-friendly design built for ease of use.
+
+
