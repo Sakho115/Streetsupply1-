@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2024 StreetSupply+. All rights reserved.
+              © 2025 StreetSupply+. All rights reserved.
             </p>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <span>Created with</span>
