@@ -51,9 +51,9 @@ const LandingPage = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Find suppliers, compare prices, and manage your orders efficiently.
                 </p>
-                <Button 
+              <Button 
                   variant="gradient" 
-                  className="w-full hover:scale-105 transition-transform duration-200" 
+                  className="w-full hover:scale-105 transition-transform duration-200 animate-pulse-glow" 
                   onClick={() => navigate('/vendor-auth')}
                 >
                   Start Sourcing

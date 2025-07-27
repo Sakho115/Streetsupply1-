@@ -162,12 +162,14 @@ const VendorDashboard = () => {
 
       <div className="container mx-auto px-4 py-8">
         <Tabs defaultValue="products" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="products">Browse Products</TabsTrigger>
-            <TabsTrigger value="suppliers">Suppliers</TabsTrigger>
-            <TabsTrigger value="forecasts">Price Forecasts</TabsTrigger>
-            <TabsTrigger value="orders">My Orders</TabsTrigger>
-          </TabsList>
+            <TabsList className="grid w-full grid-cols-6">
+              <TabsTrigger value="products">Browse Products</TabsTrigger>
+              <TabsTrigger value="suppliers">Suppliers</TabsTrigger>
+              <TabsTrigger value="live">🔴 Live Market</TabsTrigger>
+              <TabsTrigger value="ai">🤖 AI Optimizer</TabsTrigger>
+              <TabsTrigger value="analytics">📊 Analytics</TabsTrigger>
+              <TabsTrigger value="orders">My Orders</TabsTrigger>
+            </TabsList>
 
           <TabsContent value="products" className="space-y-6">
             {/* Search and Filters */}
@@ -303,6 +305,48 @@ const VendorDashboard = () => {
                 ))}
               </div>
             </Card>
+          </TabsContent>
+
+          <TabsContent value="live" className="space-y-6">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2">🔴 Live Marketplace</h3>
+              <p className="text-muted-foreground">Real-time auctions and dynamic pricing</p>
+              <Button 
+                variant="hero" 
+                className="mt-4"
+                onClick={() => navigate('/live-marketplace')}
+              >
+                Enter Live Market
+              </Button>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="ai" className="space-y-6">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2">🤖 AI Supply Optimizer</h3>
+              <p className="text-muted-foreground">Let AI optimize your supply chain</p>
+              <Button 
+                variant="gradient" 
+                className="mt-4 btn-premium"
+                onClick={() => navigate('/ai-optimizer')}
+              >
+                Launch AI Optimizer
+              </Button>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="analytics" className="space-y-6">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2">📊 Advanced Analytics</h3>
+              <p className="text-muted-foreground">Deep insights into your business</p>
+              <Button 
+                variant="gradient" 
+                className="mt-4"
+                onClick={() => navigate('/analytics')}
+              >
+                View Analytics
+              </Button>
+            </div>
           </TabsContent>
 
           <TabsContent value="orders" className="space-y-6">

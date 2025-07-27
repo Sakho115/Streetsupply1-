@@ -148,6 +148,14 @@
     @apply card-elevated shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow)];
   }
 
+  .card-premium {
+    @apply card-elevated bg-gradient-to-br from-primary/5 via-secondary/5 to-success/5 border-primary/20 hover:border-primary/40;
+  }
+
+  .card-interactive {
+    @apply card-elevated cursor-pointer hover:scale-[1.03] hover:shadow-2xl hover:border-primary/30 active:scale-[0.98];
+  }
+
   /* Button variants */
   .btn-gradient {
     @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground;
@@ -157,14 +165,34 @@
     @apply bg-gradient-to-r from-primary via-primary-glow to-secondary text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
   }
 
+  .btn-glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all duration-300;
+  }
+
+  .btn-premium {
+    @apply bg-gradient-to-r from-violet-500 to-purple-600 text-white shadow-lg hover:shadow-violet-500/25 hover:scale-105 transition-all duration-300;
+  }
+
   /* Text effects */
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 
+  .text-premium {
+    @apply bg-gradient-to-r from-violet-500 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .text-shimmer {
+    @apply bg-gradient-to-r from-gray-900 via-primary to-gray-900 bg-clip-text text-transparent animate-pulse;
+  }
+
   /* Interactive elements */
   .hover-lift {
     @apply transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .hover-float {
+    @apply transition-all duration-500 hover:transform hover:scale-105 hover:rotate-1 hover:shadow-xl;
   }
   
   .smooth-transition {
@@ -173,6 +201,30 @@
   
   .bounce-transition {
     transition: var(--transition-bounce);
+  }
+
+  /* Glass morphism effects */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-md border border-black/20;
+  }
+
+  /* Sparkle effect */
+  .sparkle::before {
+    content: "✨";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    animation: sparkle 2s infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.8) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
   }
 
   /* Animation keyframes for enhanced effects */
@@ -186,11 +238,79 @@
     50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
   }
 
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in-scale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-scale {
+    animation: fade-in-scale 0.5s ease-out forwards;
+  }
+
+  /* Advanced grid layouts */
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  /* Status indicators */
+  .status-dot {
+    @apply inline-block w-2 h-2 rounded-full;
+  }
+
+  .status-online {
+    @apply status-dot bg-green-500 animate-pulse;
+  }
+
+  .status-offline {
+    @apply status-dot bg-gray-400;
+  }
+
+  .status-busy {
+    @apply status-dot bg-yellow-500 animate-pulse;
+  }
+
+  /* Scroll indicators */
+  .scroll-indicator {
+    @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 text-muted-foreground animate-bounce;
   }
 }

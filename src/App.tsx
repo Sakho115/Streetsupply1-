@@ -16,6 +16,9 @@ import OrderDetails from "./components/OrderDetails";
 import VendorProfile from "./components/VendorProfile";
 import SupplierProfile from "./components/SupplierProfile";
 import Inventory from "./components/Inventory";
+import AISupplyOptimizer from "./components/AISupplyOptimizer";
+import LiveMarketplace from "./components/LiveMarketplace";
+import AdvancedAnalytics from "./components/AdvancedAnalytics";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +43,9 @@ const App = () => (
           <Route path="/vendor-profile" element={<VendorProfile />} />
           <Route path="/supplier-profile" element={<SupplierProfile />} />
           <Route path="/inventory" element={<Inventory />} />
+          <Route path="/ai-optimizer" element={<AISupplyOptimizer />} />
+          <Route path="/live-marketplace" element={<LiveMarketplace />} />
+          <Route path="/analytics" element={<AdvancedAnalytics />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
